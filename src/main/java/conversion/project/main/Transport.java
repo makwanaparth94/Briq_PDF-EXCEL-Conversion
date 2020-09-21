@@ -70,7 +70,7 @@ public class Transport {
 			String amount="";
 			String currency="";
 			String date="";
-			String estimated="";
+			String estimatedCompletion="";
 			String remarks="";
 
 			while (scnLine.hasNextLine()) 
@@ -88,9 +88,9 @@ public class Transport {
 				amount=scnWord.next();
 				currency=scnWord.next();
 				date=scnWord.next();
-				estimated=scnWord.next();
+				estimatedCompletion=scnWord.next();
 				remarks=scnWord.next();
-				csvFile.println(sno+","+description+","+cno+","+contractor+","+addr+","+amount+","+currency+","+date+","+estimated+","+remarks);
+				csvFile.println(sno+","+description+","+cno+","+method+","+contractor+","+addr+","+amount+","+currency+","+date+","+estimatedCompletion+","+remarks+","+projectName);
 			}catch(NoSuchElementException e) {}
 			}	
 		}
